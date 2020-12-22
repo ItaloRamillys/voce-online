@@ -1,0 +1,31 @@
+footer{
+  height: 100px;
+  width: 100%;
+  padding: 0 40px;
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+  background: #cf7c14 !important;
+  color: #fff;
+}
+footer h6{
+  font-weight: 300;
+  font-size: 1em;
+  margin: 0;
+}
+
+@media screen and (max-width: 991px){
+	footer{
+		height: 60px;
+		font-size: 14px;
+    justify-content: center;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+  footer{
+    height: 40px;
+    font-size: 9px;
+  }
+}

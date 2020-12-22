@@ -1,0 +1,25 @@
+{
+	"name": "Bora Trabalhar",
+	"description": "",
+	"minimun-stability": "stable",
+	"authors": [{
+		"name": "Italo Ramillys Benicio Silva",
+		"email": "italoramillys@gmail.com",
+		"role": "Developer"
+	}],
+	"config":{
+		"vendor-dir": "vendor"
+	},
+	"autoload": {
+		"psr-4":{
+			"Source\\": "source/"
+		},
+		"files": [
+			"source/Support/Config.php",
+			"source/Support/Helpers.php",
+		]
+	},
+	"require": {
+		
+	}
+}

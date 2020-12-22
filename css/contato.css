@@ -1,0 +1,93 @@
+#contact{
+	background: rgba(240,240,240);
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0;
+}
+#contact > h2{
+	font-weight: 300;
+	margin: 10px 0;
+}
+#contact-internal{
+	max-width: 980px;
+	width: 100%;
+	background: rgb(255,255,255);
+	padding: 30px 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#contact-internal #box-form-contact{
+	width: 100%;
+}
+#contact-internal form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#contact-internal form .row-field{
+	width: 100%;
+	display: flex;
+	margin: 15px 0;
+}
+#contact-internal form .row-field > label{
+	color: #666;
+	width: 30%;
+}
+#contact-internal form .row-field .div-70{
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#contact-internal form .row-field input[type='text'],
+#contact-internal form .row-field textarea{
+	width: 70%;
+}
+#contact-internal form .row-field input[type='text'],
+#contact-internal form .row-field select,
+#contact-internal form .row-field textarea{
+	padding: 2px 5px;
+	border: 1px solid #888;
+	border-radius: 3px;
+}
+#contact-internal form textarea{
+	max-height: 300px;
+	min-height: 150px; 
+}
+@media only screen and (max-width: 768px) {
+	#contact-internal form .row-field{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#contact-internal form .row-field label{
+		text-align: center;
+	}
+	#contact-internal form .row-field label,	
+	#contact-internal form .row-field input[type='text'],
+	#contact-internal form .row-field textarea{
+		width: 100%;
+	}
+
+	#contact-internal form .row-field input[type='text'],
+	#contact-internal form .row-field textarea{
+		font-size: 12px;
+	}
+	
+	#contact-internal form div{
+		flex-direction: column;
+	}
+
+	
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}

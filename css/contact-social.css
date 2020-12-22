@@ -1,0 +1,85 @@
+#logo-contact{
+  min-height: 200px;
+  width: 100%;
+  background: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  color: #fff;
+}
+
+#logo-contact #logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-contact #logo img{
+  max-height: 70px;
+  max-width: 70px;
+}
+
+#logo-contact #logo p{
+  font-weight: 300;
+  margin-left: 15px;
+  letter-spacing: 3px;
+}
+
+#logo-contact #contacts{
+  margin: 15px 0;
+}
+
+#logo-contact #social-media{
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+
+#logo-contact #social-media .btn-social{
+  text-align: center;
+  margin: 5px;
+  border-radius: 3px;
+  max-width: 32px;
+  min-width: 32px;
+}
+
+#logo-contact #social-media i{
+  color: #fff !important;
+  padding: 7px 8px;
+}
+
+#logo-contact #social-media .btn-social:hover{
+  transition: .5;
+  border-radius: 50%;
+  box-shadow: 1px 2px 3px rgba(0,0,0,1);
+}
+
+ #btn-facebook{
+  background: #4267B2 !important;
+}
+#btn-whatsapp{
+  background: #25D366 !important;
+}
+#btn-instagram{
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important; 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) !important; 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) !important; 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+@media screen and (max-width: 991px){
+
+  #black-layer-img-header-main p:nth-child(1){
+    font-size: 35px;
+  }
+  #black-layer-img-header-main p:nth-child(2){
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 680px){
+
+} 

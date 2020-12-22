@@ -1,0 +1,121 @@
+#how-work{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0;
+}
+#how-work > h2{
+	font-weight: 300;
+	margin: 10px 0;
+}
+#how-work-internal{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.how-work-step{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.how-work-step:nth-child(2n){
+	background: #eaeaea;
+}
+.how-work-step-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px 30px;
+}
+.how-work-step .how-work-text,
+.how-work-step .how-work-number,
+.how-work-step .how-work-img{
+	padding: 40px;
+} 
+.how-work-step .how-work-img{
+	width: 25%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.how-work-step .how-work-number{ 
+	width: 25%;
+}
+.how-work-step .how-work-text{
+	width: 50%;
+}
+.how-work-step .how-work-img img{ 
+	width: 220px;
+	height: 220px;
+}
+.how-work-step .how-work-number{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.how-work-step .how-work-number p{
+	font-size: 200px;
+    color: #00707e;
+    line-height: 220px;
+    text-align: center;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-style: normal;
+}
+.how-work-step .how-work-text{
+	text-align: left;
+}
+.how-work-step .how-work-text h3{
+	font-weight: 400;
+	font-size: 35px;
+}
+.how-work-step .how-work-text .bar-h3{
+	width: 50px;
+	height: 1px;
+	margin: 3px 0;
+}
+.how-work-step:nth-child(even) .how-work-text .bar-h3{
+	background: var(--orange);
+}
+.how-work-step:nth-child(odd) .how-work-text .bar-h3{
+	background: var(--blue);
+}
+.how-work-step:nth-child(even) .how-work-text h3{
+ color: var(--blue);
+}
+.how-work-step:nth-child(odd) .how-work-text h3{
+ color: var(--orange);
+}
+.how-work-step .how-work-text p{
+	font-weight: 300;
+	font-size: 20px;
+ 	color: var(--blue);
+}
+
+@media only screen and (max-width: 991px) {
+
+	.how-work-step-box{ flex-direction: column; padding: 10px; }
+
+	.how-work-step .how-work-img{ display: none; }
+
+	.how-work-step .how-work-number{ width: 100% !important; padding: 15px 20px;}
+
+	.how-work-step .how-work-number p{ 	font-size: 100px; line-height: 120px;}
+
+	.how-work-step .how-work-text{ width: 100% !important; padding: 15px 20px;}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}

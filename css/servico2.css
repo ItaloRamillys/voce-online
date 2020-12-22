@@ -1,0 +1,106 @@
+#services{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 25px;
+	margin-bottom: 25px;
+}
+#services > h2{
+	font-weight: 300;
+	margin: 10px 0;
+}
+#services-internal{
+	max-width: 860px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.services-step{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: 8px 0;
+	padding: 5px 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border: 1px solid #cccccc;
+	border-bottom: 3px solid #1480cf;
+	box-shadow: 3px 3px 5px 0px #00000033;
+}
+.services-step .services-text,
+.services-step .services-number{
+	padding: 40px 10px;
+} 
+.services-step .services-number{ 
+	width: 30%;
+}
+.services-step .services-number img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%; 
+}
+.services-step .services-text{
+	width: 70%;
+}
+.services-step .services-number{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 300;
+	color: #555;
+	text-shadow: 2px 2px 3px #1480cf;
+}
+.services-step .services-number p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 60px;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	line-height: 80px;
+	padding: ;
+	border-radius: 50%;
+	border-bottom: 3px solid #1480cf; 
+	border-right: 2px solid #1480cf; 
+}
+.services-step .services-text{
+	text-align: left;
+}
+.services-step .services-text h3{
+	font-weight: 400;
+	font-size: 25px;
+}
+.services-step .services-text p{
+	font-weight: 300;
+	font-size: 16px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 991px) {
+	.services-step{
+		flex-direction: column !important;
+	}
+	.services-step .services-number{ 
+		padding: 10px;
+		width: 100%;
+	}
+	.services-step .services-text{
+		width: 100%;
+		padding: 10px;
+	}
+	.services-step .services-number, .services-step .service-text{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.services-step .services-text h3{
+		text-align: center;
+	}
+}

@@ -1,0 +1,125 @@
+/*Slide*/
+.carousel-indicators li{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 0 10px;
+	box-shadow: 0 1px 1px 0 #333;
+}
+
+/*Info Site*/
+#info-site{
+	background: #ebebeb;
+	width: 100%;
+	height: auto;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#info-site #info-site-inner{
+	background: #fff;
+	width: 80%;
+	height: 90px;
+	padding: 5px 0;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+#info-site #info-site-inner .item-info-site:nth-child(1){
+	border-left: 4px solid #1480cf;
+}
+
+#info-site #info-site-inner .item-info-site{
+	width: calc(33.33% - 10px);
+	height: calc(100% - 10px);
+	border-left: 1px solid #ddd;
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+#info-site #info-site-inner .item-info-site .img-item-info-site{
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	border: 1px solid #ebebeb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-item-info-site i{
+	padding: 5px;
+	color: #1480cf;
+	font-size: 30px;
+}
+
+.text-item-info-site{
+	color: #333;
+	padding-left: 10px;
+}
+
+.title-item-info-site{
+	font-weight: 300;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.link-item-info-site, .link-item-info-site:hover{
+	text-decoration: none;
+	font-weight: 500;
+	font-size: .8em;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 991px){
+	#info-site #info-site-inner{
+		flex-direction: column;
+		height: auto;
+	}
+	#info-site #info-site-inner .item-info-site{
+		border: none;
+		border-left: 4px solid #1480cf;
+		width: calc(100% - 10px);
+		height: calc(100% - 10px);
+		padding: 5px;
+		align-items: center;
+		flex-direction: column;
+		margin: 8px 0;
+	}
+	.background-container{
+		padding: 20px 20px !important;
+	}
+	.container-radius{
+		width: 100% !important;
+	}
+}
+
+/*Divs Home Page*/
+.background-container{
+	background: #ebebeb;
+	width: 100%;
+	height: auto;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-radius{
+	background: #fff;
+	width: 80%;
+	height: 300px;
+	padding: 5px 0;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	color: #111;
+}

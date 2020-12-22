@@ -1,0 +1,99 @@
+#box-header-main{
+  color: #fff;
+  position: relative;
+  /*IMAGE CAN CHANGE*/
+}
+
+#box-header-main .black-layer-img-header-main{
+  background-size: cover;
+}
+
+.black-layer-img-header-main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.black-layer-img-header-main:nth-child(1){
+  display: flex;
+  background-image: url("http://localhost/voce-aqui/img/home/notebook-coffee.jpg");
+  background-position: 50%;
+}
+.black-layer-img-header-main:nth-child(2){
+  display: none;
+  background-image: url("http://localhost/voce-aqui/img/home/work-table.jpg");
+}
+.black-layer-img-header-main:nth-child(3){
+  display: none;
+  background-image: url("http://localhost/voce-aqui/img/home/pessoal.jpg");
+}
+
+#slide-1, #slide-2, #slide-3{
+  min-height: 100%;
+  width: 100%;
+  /*BACKGROUND COLOR CAN CHANGE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#black-layer-img-header-main p{
+  color: #fff;
+  text-shadow: 0 1px 1px #000 !important;
+}
+.black-layer-img-header-main p:nth-child(1){
+  /* FONT-SIZE COLOR p ELEMENTS CAN CHANGE*/
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 60px;
+  padding: 0 15px;
+}
+.black-layer-img-header-main p:nth-child(2){
+  /* FONT-SIZE AND COLOR p ELEMENTS CAN CHANGE*/
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 300;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 991px){
+  .black-layer-img-header-main p:nth-child(1){
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 25px;
+  }
+  .black-layer-img-header-main p:nth-child(2){
+    font-size: 25px;
+    line-height: 30px;
+  }
+  #slide-1, #slide-2, #slide-3{
+    background: rgba(0,0,0, .1);
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  .black-layer-img-header-main p:nth-child(1){
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .black-layer-img-header-main p:nth-child(2){
+    font-size: 20px;
+    line-height: 25px;
+  }
+  #slide-1, #slide-2, #slide-3{
+    background: rgba(0,0,0, .5);
+  }
+}
+
+@media screen and (min-width: 991px){
+  #box-header-main .black-layer-img-header-main button{
+    margin-top: 40px;
+  }
+}
