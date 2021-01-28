@@ -1,2 +1,1 @@
-Estudar as formas de implementar a segurança
-Criptografar a senha concatenada com um hash do username
+

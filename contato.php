@@ -6,7 +6,7 @@
 	<div id="black-layer-img-header-main">
 		<p class="animate" data-animate="animate__slideInLeft" delay-animate="400">Entre em contato </p> 
 		<p class="animate" data-animate="animate__slideInRight" delay-animate="1000">com nossos advogados</p>
-		<button>Saiba mais</button>
+		<button>Fale agora</button>
 	</div>
 </header>
 
