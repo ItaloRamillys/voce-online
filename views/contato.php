@@ -5,12 +5,12 @@
 <header id="box-header-main">
 	<div id="black-layer-img-header-main">
 		<p class="animate" data-animate="animate__slideInLeft" delay-animate="400">Entre em contato </p> 
-		<p class="animate" data-animate="animate__slideInRight" delay-animate="1000">com nossos advogados</p>
+		<p class="animate" data-animate="animate__slideInRight" delay-animate="1000">e contrate nossos serviços</p>
 		<button>Fale agora</button>
 	</div>
 </header>
 
-<?php require('logo-contato.php'); ?>
+<?php include "{$configThemePath}/components/logo-contato.php"; ?>
 
 <div id="contact">
 	<h2>Contato</h2>
@@ -67,7 +67,7 @@
         if (isNotEmpty(name) && isNotEmpty(phone) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
 
             $.ajax({
-               url: 'sendEmail.php',
+               url: '../sendEmail.php',
                method: 'POST',
                dataType: 'json',
                data: {

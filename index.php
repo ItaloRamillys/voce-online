@@ -1,19 +1,4 @@
 <?php
-/*session_start();
-if($_SESSION){
-    header("Location: painel");
-}
-
-require_once('painel/functions.php');
-require_once('proj_esc_func\connection.php');
-$conn = new Connection();
-$conn = $conn->connect();
-//SETANDO AS CONFIGURAÇÕES DA PAGINA INICIAL
-$query = "select * from config";
-$stmt  = $conn->query($query);
-$row = $stmt->fetch(PDO::FETCH_ASSOC);
-$titulo = $row['title_site'];*/
-
 define("BASE", 'http://localhost/voce-aqui');
 define("THEME", 'http://localhost/voce-aqui');
 define("THEME_PATH", __DIR__);
@@ -64,15 +49,15 @@ $configUrl[0] = (!empty($configUrl[0]) ? $configUrl[0] : "home");
         }
         </style>
 
-        <?php include 'nav.php'; ?>
+        <?php include "{$configThemePath}/components/nav.php"; ?>
 
         <div class="main">
             <?php 
             //QUERY STRING
             
-            if (file_exists("{$configThemePath}/{$configUrl[0]}.php") && !is_dir("{$configThemePath}/{$configUrl[0]}.php")) {
+            if (file_exists("{$configThemePath}/views/{$configUrl[0]}.php") && !is_dir("{$configThemePath}/views/{$configUrl[0]}.php")) {
                 //theme root
-                require "{$configThemePath}/{$configUrl[0]}.php";
+                require "{$configThemePath}/views/{$configUrl[0]}.php";
             }elseif (!empty($configUrl[1]) && file_exists("{$configThemePath}/{$configUrl[0]}/{$configUrl[1]}.php") && !is_dir("{$configThemePath}/{$configUrl[0]}/{$configUrl[1]}.php")) {
                 //theme folder
                 require "{$configThemePath}/{$configUrl[0]}/{$configUrl[1]}.php";
@@ -87,7 +72,7 @@ $configUrl[0] = (!empty($configUrl[0]) ? $configUrl[0] : "home");
           ?>
         </div>
 
-        <?php include 'footer.php' ?>
+        <?php include "{$configThemePath}/components/footer.php"; ?>
 
     </body>
 

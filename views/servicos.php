@@ -4,12 +4,12 @@
 <header id="box-header-main" title="Serviços">
 	<div id="black-layer-img-header-main">
 		<p class="animate" data-animate="animate__zoomIn" delay-animate="200">Mude seus hábitos,</p> 
-		<p class="animate" data-animate="animate__zoomIn" delay-animate="1200">entre na justiça pelo seu smartphone</p>
+		<p class="animate" data-animate="animate__zoomIn" delay-animate="1200">solicite nosso serviço pelo seu smartphone</p>
 		<button>Saiba como</button>
 	</div>
 </header>
 
-<?php require('logo-contato.php'); ?>
+<?php include "{$configThemePath}/components/logo-contato.php"; ?>
 
 <div id="our-services">
 	<h2>Serviços</h2>

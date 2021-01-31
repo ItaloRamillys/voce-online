@@ -10,7 +10,7 @@
 	</div>
 </header>
 
-<?php require('logo-contato.php'); ?>
+<?php include "{$configThemePath}/components/logo-contato.php"; ?>
 
 <div id="documents">
 	<h2>Documentos</h2>

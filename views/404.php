@@ -8,6 +8,7 @@
 	</div>
 </div>
 
-<?php require('logo-contato.php'); ?>
+<?php include "{$configThemePath}/components/logo-contato.php"; ?>
+
 
 
